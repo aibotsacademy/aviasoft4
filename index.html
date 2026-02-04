@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpsCore | Premium Aviation Operations Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Airplane Scroll Indicator -->
+    <div class="airplane-indicator">✈️</div>
+    
+    <!-- Sky Background -->
+    <div class="sky-background"></div>
+
+    <!-- Elegant Navigation -->
+    <nav class="main-nav">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <span class="brand-mark"></span>
+                <span class="brand-name">OpsCore</span>
+            </div>
+            <div class="nav-links">
+                <a href="#ramp-report" class="nav-link active" data-section="0">RAMP Intelligence</a>
+                <a href="#wheelchair" class="nav-link" data-section="1">Passenger Care</a>
+                <a href="#monitor" class="nav-link" data-section="2">Operations Control</a>
+                <a href="#avatars" class="nav-link" data-section="3">Digital Concierge</a>
+            </div>
+            <button class="btn-primary nav-cta">Request Access</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-light">The Future of</span>
+                <span class="title-emphasis">Aviation Excellence</span>
+            </h1>
+            <p class="hero-subtitle">Four integrated platforms engineered for the world's most prestigious airlines. Uncompromising precision meets effortless elegance.</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-label">Uptime Guarantee</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value">< 1.8s</div>
+                    <div class="stat-label">Response Time</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <div class="stat-value">180+</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+            </div>
+            <button class="btn-primary btn-hero">Discover Excellence</button>
+        </div>
+    </section>
+
+    <!-- RAMP Intelligence -->
+    <section id="ramp-report" class="section" data-sky="sunrise">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">RAMP Intelligence Dashboard</h2>
+                <p class="section-description">Real-time orchestration of ground operations with enterprise-grade analytics and predictive insights.</p>
+            </div>
+
+            <div class="demo-showcase">
+                <div class="showcase-card primary">
+                    <div class="card-header">
+                        <h3>Live Operations Command</h3>
+                        <div class="header-actions">
+                            <button class="view-toggle active" data-view="operations">Operations</button>
+                            <button class="view-toggle" data-view="analytics">Analytics</button>
+                            <button class="view-toggle" data-view="forecast">Forecast</button>
+                        </div>
+                    </div>
+
+                    <div class="metrics-grid" id="ramp-metrics">
+                        <button class="metric-card active" data-metric="turnaround">
+                            <div class="metric-icon">⏱️</div>
+                            <div class="metric-info">
+                                <div class="metric-value">42</div>
+                                <div class="metric-label">Active Turnarounds</div>
+                            </div>
+                            <div class="metric-trend positive">+8%</div>
+                        </button>
+                        <button class="metric-card" data-metric="gpu">
+                            <div class="metric-icon">🔌</div>
+                            <div class="metric-info">
+                                <div class="metric-value">18</div>
+                                <div class="metric-label">GPU Connected</div>
+                            </div>
+                            <div class="metric-trend positive">+12%</div>
+                        </button>
+                        <button class="metric-card" data-metric="fuel">
+                            <div class="metric-icon">⛽</div>
+                            <div class="metric-info">
+                                <div class="metric-value">9</div>
+                                <div class="metric-label">Fuel Services</div>
+                            </div>
+                            <div class="metric-trend neutral">—</div>
+                        </button>
+                        <button class="metric-card" data-metric="catering">
+                            <div class="metric-icon">🍽️</div>
+                            <div class="metric-info">
+                                <div class="metric-value">24</div>
+                                <div class="metric-label">Catering Complete</div>
+                            </div>
+                            <div class="metric-trend positive">+5%</div>
+                        </button>
+                        <button class="metric-card" data-metric="baggage">
+                            <div class="metric-icon">🧳</div>
+                            <div class="metric-info">
+                                <div class="metric-value">156</div>
+                                <div class="metric-label">Bags Loaded</div>
+                            </div>
+                            <div class="metric-trend positive">+15%</div>
+                        </button>
+                        <button class="metric-card" data-metric="cleaning">
+                            <div class="metric-icon">✨</div>
+                            <div class="metric-info">
+                                <div class="metric-value">12</div>
+                                <div class="metric-label">Cabin Ready</div>
+                            </div>
+                            <div class="metric-trend positive">+3%</div>
+                        </button>
+                    </div>
+
+                    <div class="details-panel" id="ramp-details">
+                        <div class="detail-content active" data-detail="turnaround">
+                            <h4>Active Turnarounds</h4>
+                            <div class="flight-list">
+                                <div class="flight-row premium">
+                                    <div class="flight-primary">
+                                        <span class="flight-number">AA 2847</span>
+                                        <span class="flight-route">JFK → LHR</span>
+                                    </div>
+                                    <div class="flight-meta">
+                                        <span class="gate">Gate 24B</span>
+                                        <span class="timer">38 min</span>
+                                    </div>
+                                    <span class="status-badge success">On Schedule</span>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 72%"></div></div>
+                                </div>
+                                <div class="flight-row">
+                                    <div class="flight-primary">
+                                        <span class="flight-number">BA 0117</span>
+                                        <span class="flight-route">LHR → JFK</span>
+                                    </div>
+                                    <div class="flight-meta">
+                                        <span class="gate">Gate 12C</span>
+                                        <span class="timer">45 min</span>
+                                    </div>
+                                    <span class="status-badge success">On Schedule</span>
+                                    <div class="progress-bar"><div class="progress-fill" style="width: 58%"></div></div>
+                                </div>
+                                <div class="flight-row">
+                                    <div class="flight-primary">
+                                        <span class="flight-number">LH 0400</span>
+                                        <span class="flight-route">FRA → JFK</span>
+                                    </div>
+                                    <div class="flight-meta">
+                                        <span class="gate">Gate 8A</span>
+                                        <span class="timer">52 min</span>
+                                    </div>
+                                    <span class="status-badge warning">Monitoring</span>
+                                    <div class="progress-bar"><div class="progress-fill warning" style="width: 89%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-card secondary">
+                    <div class="card-header">
+                        <h3>Performance Overview</h3>
+                        <span class="live-indicator">● Live</span>
+                    </div>
+                    <div class="performance-stats">
+                        <div class="perf-item">
+                            <span class="perf-label">Average Turnaround</span>
+                            <span class="perf-value">43 min</span>
+                            <span class="perf-change positive">-8% vs target</span>
+                        </div>
+                        <div class="perf-item">
+                            <span class="perf-label">On-Time Departure</span>
+                            <span class="perf-value">96.8%</span>
+                            <span class="perf-change positive">+2.3%</span>
+                        </div>
+                        <div class="perf-item">
+                            <span class="perf-label">Equipment Utilization</span>
+                            <span class="perf-value">94.2%</span>
+                            <span class="perf-change positive">+1.5%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passenger Care -->
+    <section id="wheelchair" class="section" data-sky="day">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Passenger Care Excellence</h2>
+                <p class="section-description">Sophisticated wheelchair assistance platform delivering world-class service with effortless coordination.</p>
+            </div>
+
+            <div class="demo-showcase">
+                <div class="showcase-card primary">
+                    <div class="card-header">
+                        <h3>Service Orchestration</h3>
+                        <div class="header-actions">
+                            <button class="view-toggle active" data-view="active">Active Services</button>
+                            <button class="view-toggle" data-view="history">Service History</button>
+                            <button class="view-toggle" data-view="teams">Team Performance</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-suite" id="wheelchair-filters">
+                        <div class="filter-row">
+                            <div class="filter-group">
+                                <label>Time Period</label>
+                                <select class="elegant-select">
+                                    <option>Today</option>
+                                    <option>This Week</option>
+                                    <option>This Month</option>
+                                    <option>Custom Range</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Airline</label>
+                                <select class="elegant-select">
+                                    <option>All Airlines</option>
+                                    <option>American Airlines</option>
+                                    <option>British Airways</option>
+                                    <option>Lufthansa</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Service Team</label>
+                                <select class="elegant-select">
+                                    <option>All Teams</option>
+                                    <option>Premium Services</option>
+                                    <option>International Desk</option>
+                                    <option>Domestic Operations</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Status</label>
+                                <select class="elegant-select">
+                                    <option>All Statuses</option>
+                                    <option>In Progress</option>
+                                    <option>Completed</option>
+                                    <option>Scheduled</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-list" id="wheelchair-list">
+                        <div class="service-item active">
+                            <div class="service-header">
+                                <span class="service-id">SR-8472</span>
+                                <span class="status-badge active">In Progress</span>
+                            </div>
+                            <div class="service-body">
+                                <p class="passenger-name">Mrs. Eleanor Richardson</p>
+                                <p class="service-details">AA 2847 • Gate 24B → International Arrivals</p>
+                                <div class="service-meta">
+                                    <span>Premium Services • Agent: Sophie M.</span>
+                                    <span>Initiated: 4 minutes ago</span>
+                                </div>
+                            </div>
+                            <div class="service-timeline">
+                                <span class="timeline-dot completed"></span>
+                                <span class="timeline-dot completed"></span>
+                                <span class="timeline-dot active"></span>
+                                <span class="timeline-dot"></span>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-header">
+                                <span class="service-id">SR-8471</span>
+                                <span class="status-badge success">Completed</span>
+                            </div>
+                            <div class="service-body">
+                                <p class="passenger-name">Mr. James Patterson</p>
+                                <p class="service-details">BA 0117 • Security → Gate 12C</p>
+                                <div class="service-meta">
+                                    <span>International Desk • Agent: Thomas L.</span>
+                                    <span>Completed: 18 minutes ago</span>
+                                </div>
+                            </div>
+                            <div class="service-rating">
+                                <span>⭐⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+
+                        <div class="service-item">
+                            <div class="service-header">
+                                <span class="service-id">SR-8470</span>
+                                <span class="status-badge scheduled">Scheduled</span>
+                            </div>
+                            <div class="service-body">
+                                <p class="passenger-name">Dr. Maria Santos</p>
+                                <p class="service-details">LH 0400 • Arrivals → Gate 8A</p>
+                                <div class="service-meta">
+                                    <span>Premium Services • Agent: Assigned</span>
+                                    <span>Scheduled: In 12 minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-card secondary">
+                    <div class="card-header">
+                        <h3>Service Excellence Metrics</h3>
+                    </div>
+                    <div class="excellence-grid">
+                        <div class="excellence-stat">
+                            <div class="stat-value-large">4.9</div>
+                            <div class="stat-label-small">Avg. Satisfaction</div>
+                            <div class="rating-stars">★★★★★</div>
+                        </div>
+                        <div class="excellence-stat">
+                            <div class="stat-value-large">8 min</div>
+                            <div class="stat-label-small">Avg. Response</div>
+                            <div class="stat-label-small trend-positive">-23% improvement</div>
+                        </div>
+                        <div class="excellence-stat">
+                            <div class="stat-value-large">127</div>
+                            <div class="stat-label-small">Services Today</div>
+                            <div class="stat-label-small trend-positive">+18% vs avg</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Operations Control -->
+    <section id="monitor" class="section" data-sky="sunset">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Operations Control Center</h2>
+                <p class="section-description">Mission-critical monitoring with intelligent SLA management and predictive analytics for operational perfection.</p>
+            </div>
+
+            <div class="demo-showcase">
+                <div class="showcase-card primary full-width">
+                    <div class="card-header">
+                        <h3>Live Service Monitor</h3>
+                        <div class="header-actions">
+                            <button class="view-toggle active" data-view="realtime">Real-Time</button>
+                            <button class="view-toggle" data-view="trends">Trends</button>
+                            <button class="view-toggle" data-view="alerts">Alerts</button>
+                        </div>
+                    </div>
+
+                    <div class="monitor-controls">
+                        <div class="control-pills">
+                            <span class="pill success">8 Excellent</span>
+                            <span class="pill warning">2 Monitoring</span>
+                            <span class="pill critical">1 Priority</span>
+                        </div>
+                    </div>
+
+                    <div class="monitor-table">
+                        <div class="table-head">
+                            <span>Service ID</span>
+                            <span>Passenger</span>
+                            <span>Route</span>
+                            <span>Duration</span>
+                            <span>SLA Status</span>
+                            <span>Performance</span>
+                        </div>
+                        <div class="table-body">
+                            <div class="table-row">
+                                <span class="row-id">SR-8472</span>
+                                <span class="row-text">E. Richardson</span>
+                                <span class="row-text">Gate 24B</span>
+                                <span class="row-timer live" data-seconds="246">04:06</span>
+                                <span class="status-badge success">Excellent</span>
+                                <div class="performance-bar">
+                                    <div class="performance-fill success" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="table-row warning-state">
+                                <span class="row-id">SR-8468</span>
+                                <span class="row-text">M. Santos</span>
+                                <span class="row-text">Gate 8A</span>
+                                <span class="row-timer live" data-seconds="564">09:24</span>
+                                <span class="status-badge warning">Monitoring</span>
+                                <div class="performance-bar">
+                                    <div class="performance-fill warning" style="width: 87%"></div>
+                                </div>
+                            </div>
+                            <div class="table-row critical-state">
+                                <span class="row-id">SR-8463</span>
+                                <span class="row-text">J. Patterson</span>
+                                <span class="row-text">Gate 12C</span>
+                                <span class="row-timer live critical" data-seconds="742">12:22</span>
+                                <span class="status-badge critical">Priority</span>
+                                <div class="performance-bar">
+                                    <div class="performance-fill critical" style="width: 98%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="insights-row">
+                        <div class="insight-card">
+                            <span class="insight-value">11.2 min</span>
+                            <span class="insight-label">Avg. Service Time</span>
+                        </div>
+                        <div class="insight-card">
+                            <span class="insight-value">97.3%</span>
+                            <span class="insight-label">SLA Compliance</span>
+                        </div>
+                        <div class="insight-card">
+                            <span class="insight-value">3.2 min</span>
+                            <span class="insight-label">Response Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Concierge -->
+    <section id="avatars" class="section" data-sky="night">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">AI-Powered Digital Concierge</h2>
+                <p class="section-description">Sophisticated virtual assistants delivering personalized service, loyalty engagement, and premium passenger experiences.</p>
+            </div>
+
+            <div class="demo-showcase">
+                <div class="showcase-card primary featured">
+                    <div class="kiosk-display">
+                        <video class="kiosk-video" autoplay muted loop playsinline>
+                            <source src="assets/kiosk.mp4" type="video/mp4">
+                        </video>
+                        <div class="kiosk-interface">
+                            <div class="avatar-presence">
+                                <div class="avatar-orb"></div>
+                                <div class="avatar-pulse"></div>
+                            </div>
+                            <div class="conversation">
+                                <div class="message assistant">
+                                    <p>Good afternoon. Welcome to our Executive Lounge. How may I assist you today?</p>
+                                </div>
+                                <div class="message guest">
+                                    <p>I'd like to learn about your premium membership benefits</p>
+                                </div>
+                                <div class="message assistant">
+                                    <p>Excellent choice. Our Platinum Elite membership offers extraordinary privileges designed for distinguished travelers...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-tile">
+                            <span class="benefit-icon">✈️</span>
+                            <h4>Priority Everything</h4>
+                            <p>Check-in, boarding, baggage</p>
+                        </div>
+                        <div class="benefit-tile">
+                            <span class="benefit-icon">🏆</span>
+                            <h4>Elite Recognition</h4>
+                            <p>Complimentary upgrades</p>
+                        </div>
+                        <div class="benefit-tile">
+                            <span class="benefit-icon">🌍</span>
+                            <h4>Global Access</h4>
+                            <p>600+ premium lounges</p>
+                        </div>
+                        <div class="benefit-tile">
+                            <span class="benefit-icon">💎</span>
+                            <h4>Concierge Service</h4>
+                            <p>24/7 dedicated support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-card secondary">
+                    <div class="card-header">
+                        <h3>Engagement Analytics</h3>
+                    </div>
+                    <div class="analytics-list">
+                        <div class="analytic-item">
+                            <span class="analytic-label">Daily Interactions</span>
+                            <span class="analytic-value">2,847</span>
+                        </div>
+                        <div class="analytic-item">
+                            <span class="analytic-label">Enrollment Conversions</span>
+                            <span class="analytic-value">34.2%</span>
+                        </div>
+                        <div class="analytic-item">
+                            <span class="analytic-label">Satisfaction Score</span>
+                            <span class="analytic-value">4.8/5.0</span>
+                        </div>
+                        <div class="analytic-item">
+                            <span class="analytic-label">Avg. Session Time</span>
+                            <span class="analytic-value">3m 42s</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section class="closing">
+        <h2>Transform Your Operations</h2>
+        <p>Join the world's leading airlines in delivering unparalleled operational excellence.</p>
+        <button class="btn-primary btn-large">Schedule Your Private Demonstration</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-mark"></span>
+                <span class="brand-name">OpsCore</span>
+            </div>
+            <p class="footer-tagline">Precision. Performance. Prestige.</p>
+            <p class="footer-legal">© 2026 OpsCore Aviation Systems. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
